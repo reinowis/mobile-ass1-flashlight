@@ -1,14 +1,16 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Flashlight
+        </ion-title>
+    </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <div class="footer">
+        <button ion-button (click)=" color='#ffffff' " style="background-color:antiquewhite; color:#000000;width: 15%; ">White</button>
+        <button ion-button (click)="color='#878787' " style="background-color:#878787; color:#000000;width: 15%; ">Grey</button>
+        <button ion-button (click)="color='#ff0000' " style="background-color:#ff0000; color:#ffffff;width: 15%; ">Red</button>
+        <button ion-button (click)="color='#009933' " style="background-color:#009933; color:#ffffff;width: 15%; ">Green</button>
+        <button ion-button (click)="color='#0099ff' " style="background-color:#0099ff; color:#ffffff;width: 15%; ">Blue</button>
+    </div>
 </ion-content>
